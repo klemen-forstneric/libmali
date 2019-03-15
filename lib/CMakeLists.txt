@@ -67,7 +67,7 @@ SET(GPU_FEATURE "${GPU_FEATURE} opencl" PARENT_SCOPE)
 SET(ABI "arm-linux-gnueabihf" CACHE STRING "default ABI")
 
 if (DP_FEATURE MATCHES "wayland")
-SET(TARGET_GPU_LIBRARY_NAME "libmali-midgard-t76x-r14p0-r1p0-wayland-gbm.so")
+SET(TARGET_GPU_LIBRARY_NAME "libmali-midgard-t76x-r14p0-r0p0-wayland-gbm.so")
 
 elseif (DP_FEATURE MATCHES "x11")
 SET(TARGET_GPU_LIBRARY_NAME "libmali-midgard-t76x-r14p0-r0p0-x11-gbm.so")
@@ -174,6 +174,12 @@ SET(link "libGLESv1_CM.so")
 link_install_library(${target} ${link})
 
 SET(link "libGLESv2.so")
+link_install_library(${target} ${link})
+
+SET(link "libwayland-egl.so.1")
+link_install_library(${target} ${link})
+
+SET(link "libwayland-egl.so")
 link_install_library(${target} ${link})
 
 endif(CMAKE_HOST_UNIX)

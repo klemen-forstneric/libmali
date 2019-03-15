@@ -176,9 +176,6 @@ link_install_library(${target} ${link})
 SET(link "libGLESv2.so")
 link_install_library(${target} ${link})
 
-SET(link "libwayland-egl.so.1")
-link_install_library(${target} ${link})
-
 SET(link "libwayland-egl.so")
 link_install_library(${target} ${link})
 

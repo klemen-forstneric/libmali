@@ -244,6 +244,17 @@ struct gbm_import_fd_data {
    uint32_t stride;
    uint32_t format;
 };
+	
+struct gbm_import_fd_modifier_data {
+   uint32_t width;
+   uint32_t height;
+   uint32_t format;
+   uint32_t num_fds;
+   int fds[4];
+   int strides[4];
+   int offsets[4];
+   uint64_t modifier;
+};
 
 struct gbm_bo *
 gbm_bo_import(struct gbm_device *gbm, uint32_t type,

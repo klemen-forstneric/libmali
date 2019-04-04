@@ -185,6 +185,12 @@ link_install_library(${target} ${link})
 SET(link "libGLESv2.so.2")
 link_install_library(${target} ${link})
 
+SET(link "libgbm.so")
+link_install_library(${target} ${link})
+
+SET(link "libgbm.so.1")
+link_install_library(${target} ${link})
+
 SET(link "libwayland-egl.so")
 link_install_library(${target} ${link})
 

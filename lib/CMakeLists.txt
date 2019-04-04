@@ -176,8 +176,8 @@ link_install_library(${target} ${link})
 SET(link "libGLESv2.so")
 link_install_library(${target} ${link})
 
-# SET(link "libwayland-egl.so")
-# link_install_library(${target} ${link})
+SET(link "libwayland-egl.so")
+link_install_library(${target} ${link})
 
 endif(CMAKE_HOST_UNIX)
 

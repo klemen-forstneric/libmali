@@ -170,10 +170,19 @@ link_install_library(${target} ${link})
 SET(link "libEGL.so")
 link_install_library(${target} ${link})
 
+SET(link "libEGL.so.1")
+link_install_library(${target} ${link})
+
 SET(link "libGLESv1_CM.so")
 link_install_library(${target} ${link})
 
+SET(link "libGLESv1_CM.so.1")
+link_install_library(${target} ${link})
+
 SET(link "libGLESv2.so")
+link_install_library(${target} ${link})
+
+SET(link "libGLESv2.so.2")
 link_install_library(${target} ${link})
 
 SET(link "libwayland-egl.so")

@@ -70,13 +70,13 @@ if (DP_FEATURE MATCHES "wayland")
 SET(TARGET_GPU_LIBRARY_NAME "libmali-midgard-t76x-r14p0-r1p0-wayland-gbm.so")
 
 elseif (DP_FEATURE MATCHES "x11")
-SET(TARGET_GPU_LIBRARY_NAME "libmali-midgard-t76x-r14p0-r0p0-x11-gbm.so")
+SET(TARGET_GPU_LIBRARY_NAME "libmali-midgard-t76x-r14p0-r1p0-x11-gbm.so")
 
 elseif (DP_FEATURE MATCHES "gbm")
-SET(TARGET_GPU_LIBRARY_NAME "libmali-midgard-t76x-r14p0-r0p0-gbm.so")
+SET(TARGET_GPU_LIBRARY_NAME "libmali-midgard-t76x-r14p0-r1p0-gbm.so")
 
 elseif (DP_FEATURE MATCHES "fbdev")
-SET(TARGET_GPU_LIBRARY_NAME "libmali-midgard-t76x-r14p0-r0p0-fbdev.so")
+SET(TARGET_GPU_LIBRARY_NAME "libmali-midgard-t76x-r14p0-r1p0-fbdev.so")
 endif(DP_FEATURE MATCHES "wayland")
 
 endif(TARGET_SOC MATCHES "rk3288")
